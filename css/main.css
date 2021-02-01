@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@700&family=Roboto+Mono&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+.main-table {
+    margin: 20px;
+}
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #CCC
+}
+
+tr:nth-child(odd) {
+    background: #FFF
+}
+
+td {
+    border: 2px solid black;
+    padding: 4px
+}
+
+th {
+    font-weight: 600;
+    background-color: hsl(46, 47%, 49%);
+    border: 2px solid black;
+}
+
+.sort {
+    cursor: pointer;
+}
+
+.table-wrapper {
+    position: relative;
+}
+
+.add-book {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: 70%;
+    height: 70%;
+    background-color: hsl(46, 47%, 49%);
+    border: 2px solid #CCC;
+    border-radius: 10px;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+
+.modal {
+    position: absolute;
+    right: 20px;
+    top: 10%;
+    text-align: center;
+    background-color: #CCC;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px
+}
+
+.rate-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.rate {
+    margin: 4px
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.blue {
+    background-color: #005bcc;
+}
+
+.yellow {
+    background-color: #faa834;
+}
+
+.red {
+    background-color: #d5505c;
+}
+
+.small-btn {
+    background-color: #1a86a7;
+    border: none;
+    color: white;
+    padding: 2px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font: weight 600;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.pagination {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pageIdx {
+    cursor: pointer;
+}
